@@ -78,7 +78,7 @@ def main(robo):
 def comandarPacman(pub, rate, ch):
     global msg_pacman
     if len(ranges) > 0:
-        right_side = ranges[0:20]
+        right_side = ranges[0:29]
         center = ranges[30:59]
         left_side = ranges[60:89]
 
@@ -210,7 +210,6 @@ def pid(msg, last_time, posdesejada):
 
 
 if __name__ == '__main__':
-	
     try:
         if len(sys.argv) == 2:
             main(sys.argv[1])
