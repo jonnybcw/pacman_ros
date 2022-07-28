@@ -1,0 +1,13 @@
+include "include/map.inc"
+include "include/robots.inc"
+include "include/sensors.inc"
+
+
+floorplan (name "robopark" size [22.000 22.000 0.800] pose [0 0 0 0] bitmap "mapa_pacman_v2.png") 
+
+# throw in a robot
+roomba_pacman (name "r0" pose [ 0 -3 0 270 ]   laser(pose [ 0.0 0 -0.1 0 ]) color "yellow")
+roomba (name "r1" pose [ -1.2 8 0 90 ]   laser(pose [ 0.0 0 -0.1 0 ]) color "blue")
+roomba (name "r2" pose [ -0.4 8 0 90 ]   laser(pose [ 0.0 0 -0.1 0 ]) color "blue")
+roomba (name "r3" pose [ 0.4 8 0 90 ]   laser(pose [ 0.0 0 -0.1 0 ]) color "blue")
+roomba (name "r4" pose [ 1.2 8 0 90 ]   laser(pose [ 0.0 0 -0.1 0 ]) color "blue")
